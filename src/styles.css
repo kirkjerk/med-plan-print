@@ -1,0 +1,166 @@
+body {
+    background-color: #f7f4f4;
+    color: black;
+    font-family: sans-serif;
+}
+a {
+    color: black;
+}
+h1 {
+    font-size: 2em;
+}
+
+.content {
+    width: 800px;
+    margin: auto;
+}
+
+.grid td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.grid {
+    border-collapse: collapse;
+}
+
+.grid td,
+.grid th {
+    border: 1px solid black;
+}
+.grid th {
+    position: relative;
+    padding: 2px;
+}
+.grid th.open {
+    background-color: #c3d4c9;
+}
+
+.editor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 16px;
+    border-radius: 20px;
+}
+.editor.med {
+    background-color: #c3d4c9;
+}
+
+.show-date {
+    background-color: #c9c3d4;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.date-edit {
+    display: flex;
+    flex-direction: row;
+    background-color: #c9c3d4;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    gap: 8px;
+    align-items: center;
+}
+
+input.short {
+    width: 20px;
+}
+
+.button-as-link {
+    background: none;
+    color: black; /* hyperlink color */
+    text-decoration: underline;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.button-as-link:hover {
+    text-decoration: none; /* or keep it underlined if you prefer */
+}
+
+.button-as-link:focus {
+    outline: none; /* for accessibility, you may want to use a different outline or a box shadow */
+    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5); /* example focus style */
+}
+
+.iconButton {
+    background: #cbaaa5;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: black;
+}
+.iconButton.pencil,
+.iconButton.check {
+    background-color: #f0eafc;
+}
+.iconButton.checkmed,
+.iconButton.plus,
+.iconButton.cancel {
+    background-color: #eef3f0;
+}
+.iconButton.plus {
+    background-color: #c3d4c9;
+}
+
+.med .chevron {
+    background-color: #5f856c;
+}
+
+.iconButton svg {
+    fill: black;
+}
+.iconButton:disabled svg {
+    fill: #999;
+}
+
+.iconButton:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5); /* blue focus ring */
+}
+
+.triangle-up {
+    position: absolute;
+    top: -19px; /* Position at the top of the th */
+    left: 50%; /* Start at 50% of the th width */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #c3d4c9; /* This color determines the color of the triangle */
+}
+
+@media print {
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+    .content {
+        margin-left: auto;
+    }
+    body {
+        background: white;
+    }
+}
