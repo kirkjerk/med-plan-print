@@ -34,6 +34,8 @@ const App = () =>{
 
     const oldData = hashData || storedData || data;
     setData(oldData);
+    setPickedDate(oldData.startDate);
+    setPickedDayCount(oldData.dayCount);
     if(oldData.entries.length === 1 && oldData.entries[0].name === ""){
       setEditingIndex(0);
     }

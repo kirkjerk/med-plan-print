@@ -78,7 +78,7 @@ const Grid = ({data, onEdit, currentlyEditing}) =>{
         <tfoot>
           <tr>
             <th></th>
-              {entries.map((entry,i)=> (<th>{entry.name || "???"}</th>))}
+              {entries.map((entry,i)=> (<th key={`${i}.${entry.name}`}>{entry.name || "???"}</th>))}
           </tr>        
         </tfoot>
 
