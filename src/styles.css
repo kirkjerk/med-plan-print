@@ -28,9 +28,13 @@ h1 {
 .grid th {
     border: 1px solid black;
 }
-.grid th {
+.grid th,
+.grid td {
     position: relative;
     padding: 2px;
+}
+.grid .date {
+    padding: 6px;
 }
 .grid th.open {
     background-color: #c3d4c9;
@@ -159,6 +163,9 @@ input.short {
     }
     .content {
         margin-left: auto;
+    }
+    .grid .date {
+        padding: 1px;
     }
     body {
         background: white;

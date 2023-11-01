@@ -9,7 +9,7 @@ const Header = ({children, handleClick, offset, isOpen, anyOpen}) => {
 }
 const DateBox = ({prettyDay, prettyDate}) => {
   return (
-    <td>
+    <td className="date">
       <nobr>
       {prettyDay} <br />
       {prettyDate}

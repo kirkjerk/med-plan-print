@@ -131,6 +131,8 @@ const App = () =>{
           <p>(Also this site uses local storage so the information will be preserved if you use the same browser- but no information is stored on the server)</p>
 
           <p>If you advance to the next time period, any offsets (i.e. weeky, but starting in 2 days) will be automatically updated</p>
+
+          <p>This is an open source project: <a href="https://github.com/kirkjerk/med-plan-print">github.com/kirkjerk/med-plan-print</a></p>
         </section> 
       {editingIndex === null && (
         <section className="metasetup editor no-print">

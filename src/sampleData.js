@@ -13,13 +13,13 @@ const data = {
      },
      {
       "name": "mirtaz(1/8)",
-      "freq": 1,
-      "offset": 0
+      "freq": 2,
+      "offset": 1
      },
      {
       "name": "prednis(1)",
-      "freq": "1",
-      "offset": "0"
+      "freq": "3",
+      "offset": 0
      },
      {
       "name": "am puff",
